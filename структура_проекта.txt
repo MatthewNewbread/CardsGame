@@ -1,0 +1,255 @@
+Ñòðóêòóðà ïàïîê
+Ñåðèéíûé íîìåð òîìà: 826E-D7C4
+C:.
+¦   ñòðóêòóðà_ïðîåêòà.txt
+¦   
++---build-Client-Desktop_Qt_5_12_12_MinGW_64_bit-Debug
+¦   ¦   .qmake.stash
+¦   ¦   Makefile
+¦   ¦   Makefile.Debug
+¦   ¦   Makefile.Release
+¦   ¦   
+¦   +---debug
+¦   ¦       auth_manager.o
+¦   ¦       error_handler.o
+¦   ¦       file_logger.o
+¦   ¦       game_manager.o
+¦   ¦       main.o
+¦   ¦       player_manager.o
+¦   ¦       table_manager.o
+¦   ¦       
+¦   L---release
++---build-Server-Desktop_Qt_5_12_12_MinGW_64_bit-Debug
+¦   ¦   .qmake.stash
+¦   ¦   Makefile
+¦   ¦   Makefile.Debug
+¦   ¦   Makefile.Release
+¦   ¦   
+¦   +---debug
+¦   ¦       auth_manager.o
+¦   ¦       error_handler.o
+¦   ¦       file_logger.o
+¦   ¦       game_manager.o
+¦   ¦       main.o
+¦   ¦       player_manager.o
+¦   ¦       table_manager.o
+¦   ¦       
+¦   L---release
++---Client
+¦   ¦   Client.pro
+¦   ¦   Client.pro.user
+¦   ¦   error_handler.cpp
+¦   ¦   error_handler.h
+¦   ¦   file_logger.cpp
+¦   ¦   file_logger.h
+¦   ¦   main.cpp
+¦   ¦   user.h
+¦   ¦   
+¦   +---Network
+¦   ¦       auth_manager.cpp
+¦   ¦       auth_manager.h
+¦   ¦       chat_manager.cpp
+¦   ¦       chat_manager.h
+¦   ¦       client.cpp
+¦   ¦       client.h
+¦   ¦       database_manager.cpp
+¦   ¦       database_manager.h
+¦   ¦       game_manager.cpp
+¦   ¦       game_manager.h
+¦   ¦       lobby_manager.cpp
+¦   ¦       lobby_manager.h
+¦   ¦       table_manager.cpp
+¦   ¦       table_manager.h
+¦   ¦       
+¦   L---UI
+¦       ¦   auth_ui.cpp
+¦       ¦   auth_ui.h
+¦       ¦   game_table_ui.h
+¦       ¦   menu.cpp
+¦       ¦   menu.h
+¦       ¦   profile_ui.h
+¦       ¦   table_ui.h
+¦       ¦   
+¦       +---Game
+¦       ¦   ¦   card.cpp
+¦       ¦   ¦   card.h
+¦       ¦   ¦   card_animation.cpp
+¦       ¦   ¦   card_animation.h
+¦       ¦   ¦   chat.cpp
+¦       ¦   ¦   chat.h
+¦       ¦   ¦   game_control.cpp
+¦       ¦   ¦   game_control.h
+¦       ¦   ¦   game_ui.cpp
+¦       ¦   ¦   game_ui.h
+¦       ¦   ¦   player.cpp
+¦       ¦   ¦   player.h
+¦       ¦   ¦   table.cpp
+¦       ¦   ¦   table.h
+¦       ¦   ¦   
+¦       ¦   L---image
+¦       ¦           10C.png
+¦       ¦           10D.png
+¦       ¦           10H.png
+¦       ¦           10S.png
+¦       ¦           2C.png
+¦       ¦           2D.png
+¦       ¦           2H.png
+¦       ¦           2S.png
+¦       ¦           3C.png
+¦       ¦           3D.png
+¦       ¦           3H.png
+¦       ¦           3S.png
+¦       ¦           4C.png
+¦       ¦           4D.png
+¦       ¦           4H.png
+¦       ¦           4S.png
+¦       ¦           5C.png
+¦       ¦           5D.png
+¦       ¦           5H.png
+¦       ¦           5S.png
+¦       ¦           6C.png
+¦       ¦           6D.png
+¦       ¦           6H.png
+¦       ¦           6S.png
+¦       ¦           7C.png
+¦       ¦           7D.png
+¦       ¦           7H.png
+¦       ¦           7S.png
+¦       ¦           8C.png
+¦       ¦           8D.png
+¦       ¦           8H.png
+¦       ¦           8S.png
+¦       ¦           9C.png
+¦       ¦           9D.png
+¦       ¦           9H.png
+¦       ¦           9S.png
+¦       ¦           AC.png
+¦       ¦           AD.png
+¦       ¦           AH.png
+¦       ¦           AS.png
+¦       ¦           JC.png
+¦       ¦           JD.png
+¦       ¦           JH.png
+¦       ¦           JS.png
+¦       ¦           KC.png
+¦       ¦           KD.png
+¦       ¦           KH.png
+¦       ¦           KS.png
+¦       ¦           NN.png
+¦       ¦           QC.png
+¦       ¦           QD.png
+¦       ¦           QH.png
+¦       ¦           QS.png
+¦       ¦           
+¦       +---Lobby
+¦       ¦       create_session_ui.cpp
+¦       ¦       create_session_ui.h
+¦       ¦       game_session_ui.cpp
+¦       ¦       game_session_ui.h
+¦       ¦       lobby_ui.cpp
+¦       ¦       lobby_ui.h
+¦       ¦       
+¦       L---Profile
+¦               profile_admin_ui.cpp
+¦               profile_admin_ui.h
+¦               profile_manager_ui.cpp
+¦               profile_manager_ui.h
+¦               profile_player_ui.cpp
+¦               profile_player_ui.h
+¦               profile_security_ui.cpp
+¦               profile_security_ui.h
+¦               profile_ui.cpp
+¦               profile_ui.h
+¦               
+L---Server
+    ¦   auth.cpp
+    ¦   auth.h
+    ¦   error_handler.cpp
+    ¦   error_handler.h
+    ¦   file_logger.cpp
+    ¦   file_logger.h
+    ¦   game_connection.cpp
+    ¦   game_connection.h
+    ¦   lobby.cpp
+    ¦   lobby.h
+    ¦   main.cpp
+    ¦   Server.pro
+    ¦   Server.pro.user
+    ¦   user.cpp
+    ¦   user.h
+    ¦   
+    +---Database
+    ¦   ¦   database.cpp
+    ¦   ¦   database.h
+    ¦   ¦   database_model.cpp
+    ¦   ¦   database_model.h
+    ¦   ¦   
+    ¦   L---Qt-AES-master
+    ¦       ¦   CMakeLists.txt
+    ¦       ¦   CONTRIBUTING.md
+    ¦       ¦   LICENSE
+    ¦       ¦   main.cpp
+    ¦       ¦   qaesencryption.cpp
+    ¦       ¦   qaesencryption.h
+    ¦       ¦   qaesencryption.pro
+    ¦       ¦   QtAESConfig.cmake.in
+    ¦       ¦   README.md
+    ¦       ¦   res.qrc
+    ¦       ¦   
+    ¦       +---aesni
+    ¦       ¦       aesni-enc-cbc.h
+    ¦       ¦       aesni-enc-ecb.h
+    ¦       ¦       aesni-key-exp.h
+    ¦       ¦       aesni-key-init.h
+    ¦       ¦       
+    ¦       L---unit_test
+    ¦               aestest.cpp
+    ¦               aestest.h
+    ¦               alices-in-wonderland.txt
+    ¦               la-divina-commedia.txt
+    ¦               moby-dick.txt
+    ¦               shakespeare-complete-works.txt
+    ¦               
+    +---Game
+    ¦   ¦   game.cpp
+    ¦   ¦   game.h
+    ¦   ¦   
+    ¦   +---Deck
+    ¦   ¦       card.cpp
+    ¦   ¦       card.h
+    ¦   ¦       deck.cpp
+    ¦   ¦       deck.h
+    ¦   ¦       
+    ¦   +---Game-Blackjack
+    ¦   ¦       game_blackjack.cpp
+    ¦   ¦       game_blackjack.h
+    ¦   ¦       
+    ¦   +---Game-Poker
+    ¦   ¦       game_poker.cpp
+    ¦   ¦       game_poker.h
+    ¦   ¦       
+    ¦   L---Player
+    ¦           player.cpp
+    ¦           player.h
+    ¦           player_bank.cpp
+    ¦           player_bank.h
+    ¦           player_hand.cpp
+    ¦           player_hand.h
+    ¦           player_role_bot.cpp
+    ¦           player_role_dealer.cpp
+    ¦           player_role_human.cpp
+    ¦           
+    L---Network
+            auth_manager.cpp
+            auth_manager.h
+            database_manager.cpp
+            database_manager.h
+            game_manager.cpp
+            game_manager.h
+            lobby_manager.cpp
+            lobby_manager.h
+            server.cpp
+            server.h
+            table_manager.cpp
+            table_manager.h
+            
