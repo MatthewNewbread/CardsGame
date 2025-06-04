@@ -1,23 +1,28 @@
 # === Qt / C++ ===
-*.o
+
+\*.o
 *.obj
 *.autosave
 *.user
 *.user.*
 *.pro.user*
-moc_*
-ui_*
-qrc_*
-*.qmlc
-*.jsc
+moc\_*
+ui\_*
+qrc\_*
+\*.qmlc
+\*.jsc
 
 # build dirs
-build-*/
+
+build-\*/
 bin/
 out/
 debug/
 release/
+build-Client-Desktop\_Qt\_5\_12\_12\_MinGW\_64\_bit-Debug/
+build-Server-Desktop\_Qt\_5\_12\_12\_MinGW\_64\_bit-Debug/
 
 # QtCreator
+
 *.creator.*
-.DS_Store
+.DS\_Store
