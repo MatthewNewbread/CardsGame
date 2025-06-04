@@ -5,7 +5,7 @@ Database_model::Database_model(DataBase* db, QObject* parent): QObject(parent), 
 
 QVector<QVariantMap> Database_model::get_player_data(const QString& username)
 {
-    QString query_string = "SELECT * FROM " USERS " WHERE " USERS_NAME " = " USERS_NAME;
+    QString query_string = "SELECT * FROM " USERS " WHERE " USERS_NAME " = :" USERS_NAME;
     QVariantMap bindings{{USERS_NAME, username}};
     return execute_query_and_fetch(query_string, bindings);
 }
