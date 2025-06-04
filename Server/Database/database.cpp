@@ -29,19 +29,19 @@ DataBase::DataBase(QObject* parent): QObject{parent}
              GAMES_DESCRIPTION " VARCHAR(255) NOT NULL)"
         },
         {
-             Table::Game_Sessions, "CREATE TABLE " GAME_SESSIONS " ("
+            Table::Game_Sessions, "CREATE TABLE " GAME_SESSIONS " ("
              "id INTEGER PRIMARY KEY AUTOINCREMENT, "
-             GAME_SESSIONS_TIMESTAMP " DATATIME NOT NULL, "
+             GAME_SESSIONS_TIMESTAMP " DATETIME NOT NULL, "
              GAME_SESSIONS_USER_ID " INTEGER NOT NULL, "
              GAME_SESSIONS_GAME_ID " INTEGER NOT NULL, "
              GAME_SESSIONS_BET_AMOUNT " INTEGER NOT NULL, "
-             GAME_SESSIONS_WIN_LOSS " INTEGER NOT NULL"
-             "FORGEIN KEY (" GAME_SESSIONS_USER_ID ") REFERENCES " USERS " (id)"
-             "FORGEIN KEY (" GAME_SESSIONS_GAME_ID ") REFERENCES " GAMES " (id))"
+             GAME_SESSIONS_WIN_LOSS " INTEGER NOT NULL, "
+             "FOREIGN KEY (" GAME_SESSIONS_USER_ID ") REFERENCES " USERS " (id), "
+             "FOREIGN KEY (" GAME_SESSIONS_GAME_ID ") REFERENCES " GAMES " (id))"
         },
         {
             Table::Roles, "CREATE TABLE " ROLES " ("
-            "id INTAGER PRIMARY KEY AUTOINCREMENT, "
+            "id INTEGER PRIMARY KEY AUTOINCREMENT, "
             ROLES_NAME " VARCHAR(255) UNIQUE NOT NULL)"
         }
     };
@@ -58,7 +58,7 @@ DataBase::DataBase(QObject* parent): QObject{parent}
             ", " GAME_SESSIONS_BET_AMOUNT ", " GAME_SESSIONS_WIN_LOSS ") "
             "VALUES (:Timestamp, :User_id, :Game_id, :Bet_amount, :Win_loss)"
         },
-        { Table::Roles, "INSERT INTO" ROLES " (" ROLES_NAME ") VALUES (:Name)"}
+        { Table::Roles, "INSERT INTO " ROLES " (" ROLES_NAME ") VALUES (:Name)"}
     };
     queries_remove_record =
     {

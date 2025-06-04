@@ -24,7 +24,7 @@ int Error_Handler::validate_input_int(const QString& username, const std::string
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
         }
-        else if (choice > max && choice < min)
+        else if (choice < min || choice > max)
         {
             error_message = "Invalid input. Please enter a valid action number.\n";
             handle_error(username, error_message);
