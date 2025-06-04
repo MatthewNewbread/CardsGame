@@ -1,0 +1,23 @@
+# === Qt / C++ ===
+*.o
+*.obj
+*.autosave
+*.user
+*.user.*
+*.pro.user*
+moc_*
+ui_*
+qrc_*
+*.qmlc
+*.jsc
+
+# build dirs
+build-*/
+bin/
+out/
+debug/
+release/
+
+# QtCreator
+*.creator.*
+.DS_Store
